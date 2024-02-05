@@ -1,15 +1,16 @@
-#Write a method that takes two arguments, a string and a positive integer, and prints the string as many times as the integer indicates.
-#repeat('Hello', 3)
-#Hello
-#Hello
-#Hello
-
-
+# Write a method that takes two arguments, a string and a positive integer
+# prints the string as many times as the integer indicates.
+# repeat('Hello', 3)
+# Hello
+# Hello
+# Hello
+require "pry"
 
 def repeat(string, number)
-  number.times do 
+  number.times do
     puts string
+    binding.pry
   end
 end
 
-repeat('hello',5)
+repeat('what?', 10)
